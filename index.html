@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MahammadAli S</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            margin: 0 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 5s;
+
+            @starting-style {
+                opacity: 0;
+            }
+        }
+
+        .title {
+            margin: 10px;
+            font-size: 100px;
+            font-weight: bold;
+            text-wrap: nowrap;
+        }
+
+        .sub-title {
+            margin: 10px;
+            font-size: 50px;
+            font-weight: bold;
+            text-wrap: nowrap;
+        }
+
+        .logos {
+            margin: 10px;
+        }
+
+        .logos a {
+            margin: 10px;
+
+            @starting-style {
+                opacity: 0
+            }
+        }
+
+        .logos a:nth-child(1) {
+            transition: opacity 3s;
+        }
+
+        .logos a:nth-child(2) {
+            transition: opacity 5s;
+        }
+
+        .logos a:nth-child(3) {
+            transition: opacity 7s;
+        }
+
+        .trans {
+            text-align: center;
+            transition: transform 1s ease-in-out;
+        }
+
+        .trans:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="trans">
+            <p class="title">MahammadAli S</p>
+            <p class="sub-title">Software Engineer</p>
+        </div>
+        <div class="logos trans-logos">
+            <a href="https://github.com/alicse3" target="_blank"><img src="images/github.svg" width="70" height="70"
+                    alt="github" /></a>
+            <a href="https://in.linkedin.com/in/alicse3" target="_blank"><img src="images/linkedin.png" width="70"
+                    height="70" alt="linkedIn" /></a>
+            <a href="https://leetcode.com/alicse3" target="_blank"><img src="images/leetcode.svg" height="70"
+                    alt="leetcode" /></a>
+        </div>
+    </div>
+</body>
+
+</html>
